@@ -1,12 +1,12 @@
 classdef JetInlet < JetEngineBase
     
     properties (Constant = true)
-        cruiseMach = 3.5;
-        cruiseAlt = 50000; %in ft
     end
     
     properties
         area = 0;
+        cruiseMach = 0;
+        cruiseAlt = 0; %in ft
     end
     
     methods
@@ -17,6 +17,10 @@ classdef JetInlet < JetEngineBase
         
         function mDot = getMassFlowRate(obj, area) 
             mDot = obj.cruiseMach * obj.cruiseAlt * area; %Replace with mDot logic
+        end
+        
+        function setCruiseMach(obj, cruiseMach)
+            obj.cruiseMach = cruiseMach;   
         end
     end
     

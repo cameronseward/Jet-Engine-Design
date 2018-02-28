@@ -2,11 +2,9 @@ classdef JetEngineBase < handle
     % Properties to be constant, to conserve memory due prevelance of this
     % object
     properties (Abstract, Constant) 
-        cruiseMach;
-        cruiseAlt; %in ft
     end
     
-    properties
+    properties(Abstract)
     end
     
     methods (Abstract)
