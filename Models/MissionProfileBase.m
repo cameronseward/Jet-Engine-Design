@@ -5,9 +5,7 @@ classdef MissionProfileBase < handle
         flightDuration;
     end
     
-    methods (Static, Abstract)
-        cruiseMach = getCruiseMach()
-        cruiseAlt = getCruiseAlt()
-        flightDuration = getFlightDuration()
+    methods (Abstract)
+
     end
 end

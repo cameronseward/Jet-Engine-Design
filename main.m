@@ -4,9 +4,11 @@ addpath('models');
 
 % Create Objects for each engine part
 inlet = JetInlet();
+
+%Define the mission
 mission = SupersonicMission();
 
-mission.getCruiseMach()
+mission.cruiseMach
 
 inlet.getMassFlowRate(5)
 
