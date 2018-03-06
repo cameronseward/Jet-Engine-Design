@@ -19,6 +19,10 @@ classdef JetInlet < JetEngineBase
             mDot = obj.cruiseMach * obj.cruiseAlt * area; %Replace with mDot logic
         end
         
+        function inletArea = calcInletArea(obj)
+            
+        end
+        
         function setCruiseMach(obj, cruiseMach)
             obj.cruiseMach = cruiseMach;   
         end
